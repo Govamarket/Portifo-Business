@@ -137,14 +137,14 @@ nav{
     position: absolute;
     right: 0px;
     height: 60vh;
-    top: 24vh;
+    top: 12vh;
     margin: 2rem;
-    background-color: black;
+    background-color: red;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    transform: translateX(100%);
+    transform: translateX(-150%);
     transition: transform 1s ease-in;
 
    }
