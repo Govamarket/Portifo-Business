@@ -8,7 +8,7 @@
 body {
   background-color: rgb(26, 25, 23);
   animation: fade 1s ease-in 1s;
-  transform: translateY(-4%);
+  transform: translateY(-1%);
   opacity: 1;
   color: #fff;
 }
@@ -138,7 +138,7 @@ nav {
   text-align: center;
   align-items: center;
   letter-spacing: 1px;
-  line-height: 3rem;
+  line-height: 2rem;
   border-radius: 1rem;
 }
 
