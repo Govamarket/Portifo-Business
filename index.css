@@ -165,18 +165,16 @@ nav {
   font-family: "Open Sans", sans-serif;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
-}
-.container h2:hover {
   background: linear-gradient(to right, rgb(67, 124, 205), rgb(69, 214, 202));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
-/* Adding best caption */
-.box{
- margin-left: 50px;
- 
+/* grid template*/
+.grid-template{
+  display: grid;
+  grid-template-rows: auto auto auto;
 }
+
 
 /* All icons in the site */
 /* Adding onswitch light */
