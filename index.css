@@ -204,6 +204,14 @@ nav {
   .nav-links {
     width: 60%;
   }
+  .rows {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    line-height: 2rem;
+    margin: 1rem;
+    gap: 1rem;
+  }
 }
 @media screen and (max-width: 768px) {
   body {
@@ -273,13 +281,3 @@ nav {
 }
 
 
-@media screen and (max-width: 780px) {
-    .rows {
-        display: flex;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-        line-height: 2rem;
-        margin: 1rem;
-        gap: 1rem;
-      }
-}
