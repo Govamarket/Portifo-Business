@@ -5,6 +5,10 @@
   padding: 0px;
   box-sizing: border-box;
 }
+
+html{
+  scroll-behavior: smooth;
+}
 body {
   background-color: rgb(26, 25, 23);
   animation: fade 1s ease-in 1s;
@@ -170,11 +174,82 @@ nav {
   -webkit-text-fill-color: transparent;
 }
 /* grid template*/
-.grid-template{
-  display: grid;
-  grid-template-rows: auto auto auto;
+#rows{
+  display: flex;
+  justify-content: space-around;
+  line-height: 2rem;
+  margin: 2rem;
+  gap: 1rem;
+}
+/* Media pages about */
+
+#media{
+  margin: 1rem;
+  scroll-behavior: smooth;
+  animation: fade 1s ease-in-out;
+  scroll-behavior: smooth;
+  overflow: hidden;
+  transform: translateX(-10);
+  opacity: 1;
 }
 
+#media h2 {
+  margin: 1.5rem;
+  text-align: center;
+  font-size: 2rem;
+  /* text-decoration: underline rgb(249, 243, 243); */
+  font-family: "Open Sans", sans-serif;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  background: linear-gradient(to right, rgb(67, 124, 205), rgb(69, 214, 202));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: fade 1s ease-in;
+  transition: all 1s;
+  opacity: 1;
+}
+
+kbd{
+  background: linear-gradient(to right, rgb(67, 124, 205), rgb(69, 214, 202));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#rows #col1,
+#col2,
+#col3{
+    margin-left: 30px;
+    margin-left: 1rem;
+    padding-left: 1rem;
+    padding: 1rem;
+  box-shadow: 2px -2px 172px -62px rgba(212, 212, 212, 0.27);
+  -webkit-box-shadow: 2px -2px 172px -62px rgba(229, 227, 227, 0.27);
+  -moz-box-shadow: 2px -2px 172px -62px rgba(212, 206, 206, 0.27);
+  border: 1px solid #ccc;
+  /* text-align: center; */
+  /* align-items: center; */
+  letter-spacing: 1px;
+  line-height: 2rem;
+  border-radius: 1rem;
+  font-size: 16px;
+  font-weight: 16px;
+  font-family: "Open Sans", sans-serif;
+}
+
+#rows a{
+  color: #fff;
+}
+
+
+
+
+
+#rows h3 {
+  text-align: center;
+  text-decoration: underline grey;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+}
 
 /* All icons in the site */
 /* Adding onswitch light */
@@ -228,6 +303,15 @@ nav {
     margin: 1rem;
     gap: 2rem;
   }
+
+  #rows{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    line-height: 2rem;
+    margin: 2rem;
+    gap: 2rem;
+  }
 }
 @media screen and (max-width: 768px) {
   body {
@@ -258,6 +342,15 @@ nav {
     flex-wrap: wrap;
     line-height: 2rem;
     margin: 1rem;
+    gap: 1rem;
+  }
+
+  #rows{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    line-height: 2rem;
+    margin: 2rem;
     gap: 1rem;
   }
 
