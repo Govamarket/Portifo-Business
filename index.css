@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto&family=Sora:wght@500&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto&family=Sora:wght@500&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@300&family=Roboto&family=Sora:wght@500&display=swap');
 *{
     margin: 0px;
     padding: 0px;
@@ -8,6 +9,18 @@
 }
 body{
     background-color: black;
+    animation: fade 1s ease-in 1s;
+    opacity: 1;
+    color: #fff;
+}
+
+@keyframes fade {
+    1% {
+        opacity: 1%;
+    }
+    100% {
+        opacity: 100%;
+    }
 }
 nav{
     display: flex;
@@ -83,7 +96,7 @@ nav{
 /* Adding onswitch light */
 .fa-regular{
     color: #fff;
-    font-size: 2rem;
+    font-size: 1rem;
     border: 1px solid gainsboro;
     border-radius: 3rem;
     padding: 1rem;
@@ -92,6 +105,38 @@ nav{
 .fa-regular:hover{
     background-color: gainsboro;
     color: black;
+}
+
+.fa-sharp{
+color: #fff;
+font-size: 1.4rem;
+margin-left: 1rem;
+}
+#p{
+    text-align: center;
+    align-items: center !;
+    color: #fff;
+}
+
+.article{
+    display: inline-block;
+    padding: 13px;
+    margin: 10px;
+    font-size: 25px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+.article img{
+    border-radius: 50%;
+    height:50px;
+    width:50px;
+    align-items: center;
+    /* transition: all 1s  ease-in; */
+}
+
+
+.article img:hover{
+    transform: scale(3);
 }
 
 /*  All media query*/
@@ -132,6 +177,7 @@ nav{
     display: block;
    }
 }
+
 
 .nav-active{
     transform: translateX(0%);
