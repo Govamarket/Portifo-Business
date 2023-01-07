@@ -167,8 +167,6 @@ nav {
   font-size: 2rem;
   /* text-decoration: underline rgb(249, 243, 243); */
   font-family: "Open Sans", sans-serif;
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
   background: linear-gradient(to right, rgb(67, 124, 205), rgb(69, 214, 202));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -350,7 +348,7 @@ kbd{
     justify-content: space-around;
     flex-wrap: wrap;
     line-height: 2rem;
-    margin: 2rem;
+    margin: 1rem;
     gap: 1rem;
   }
 
