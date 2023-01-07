@@ -271,3 +271,15 @@ nav {
 .toggle .line3 {
   transform: rotate(45deg) translate(-5px, -6px);
 }
+
+
+@media screen and (max-width: 780px) {
+    .rows {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        line-height: 2rem;
+        margin: 1rem;
+        gap: 1rem;
+      }
+}
