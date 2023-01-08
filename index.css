@@ -222,8 +222,10 @@ kbd {
   font-family: "Open Sans", sans-serif;
 }
 
-.general-ani div {
-  background-image: url(/img/learn.jpg);
+.general-ani{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  place-content: center;
 }
 
 .general-ani h3 {
@@ -303,6 +305,11 @@ kbd {
     padding: 0;
   }
 
+  .general-ani{
+    display: grid;
+    grid-template-columns: auto auto;
+    place-content: center;
+  }
   
   .nav-links {
     position: absolute;
