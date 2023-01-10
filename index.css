@@ -296,6 +296,7 @@ footer{
 }
 
 form{
+  margin-left: 3rem;
   background-color: rgb(9, 9, 69);
   padding: 2rem;
   border-top-right-radius: 1rem;
