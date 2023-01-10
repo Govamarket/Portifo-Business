@@ -53,3 +53,15 @@ setInterval(() => {
         strap.innerHTML = counter + "%";
     }
 }, 1000);
+
+let javaScript = document.querySelector("#script");
+let limit = 0;
+setInterval(() => {
+    if (limit == 30) {
+       clearInterval(); 
+    }else{
+        limit += 1;
+        script.innerHTML = counter + "%";
+    }
+}, 1000);
+navSlide();
