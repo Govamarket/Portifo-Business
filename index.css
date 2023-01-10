@@ -152,7 +152,6 @@ nav {
 
 .rows h3 {
   text-align: center;
-  text-decoration: underline grey;
   font-size: 16px;
   font-family: "Open Sans", sans-serif;
 }
@@ -221,7 +220,6 @@ kbd{
 
 #rows h3 {
   text-align: center;
-  text-decoration: underline grey;
   font-size: 16px;
   font-family: "Open Sans", sans-serif;
 }
@@ -398,22 +396,22 @@ input{
   .rows .col1,
 .col2,
 .col3 {
-  width: 25rem;
-  margin-left: 30px;
+  width: 28rem;
+  max-height: auto;
+  margin-left: 2rem;
   margin-left: 1rem;
-  padding-left: 2px;
-  padding: 5px;
   box-shadow: 2px -2px 172px -62px rgba(212, 212, 212, 0.27);
   -webkit-box-shadow: 2px -2px 172px -62px rgba(229, 227, 227, 0.27);
   -moz-box-shadow: 2px -2px 172px -62px rgba(212, 206, 206, 0.27);
   border: 1px solid #ccc;
   letter-spacing: 1px;
-  /* line-height: 2rem; */
+  line-height: 2rem;
   border-radius: 1rem;
   font-size: 16px;
   font-weight: 16px;
   font-family: "Open Sans", sans-serif;
 }
+
 
   .general-ani{
     display: grid;
