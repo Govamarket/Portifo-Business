@@ -11,9 +11,12 @@ html {
 }
 body {
   background-color: rgb(26, 25, 23);
+  background-image: url(/img/black.jpg);
+  background-attachment: fixed;
+  background-position: cover;
+  background-repeat: no-repeat;
   animation: fade 1s ease-in 1s;
   transform: translateY(-1%);
-  opacity: 1;
   color: #fff;
 }
 
@@ -100,7 +103,7 @@ nav {
 /* Styling my main article */
 
 .article {
-  display: inline-block;
+  /* display: inline-block; */
   padding: 13px;
   margin: 10px;
   font-size: 25px;
@@ -134,7 +137,7 @@ nav {
   margin-left: 30px;
   margin-left: 1rem;
   padding-left: 1rem;
-  padding: 5px;
+  padding: 4px;
   box-shadow: 2px -2px 172px -62px rgba(212, 212, 212, 0.27);
   -webkit-box-shadow: 2px -2px 172px -62px rgba(229, 227, 227, 0.27);
   -moz-box-shadow: 2px -2px 172px -62px rgba(212, 206, 206, 0.27);
@@ -165,9 +168,12 @@ nav {
 
 /* Media pages about */
 
+#container-fluid{
+  margin-top: 4rem;
+}
 
-#media h2 {
-  margin: 1.5rem;
+
+#container-fluid h2 {
   text-align: center;
   font-size: 2rem;
   font-family: "Open Sans", sans-serif;
@@ -176,7 +182,7 @@ nav {
   -webkit-text-fill-color: transparent;
 }
 
-kbd {
+kbd{
   background: linear-gradient(to right, rgb(67, 124, 205), rgb(69, 214, 202));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -196,7 +202,7 @@ kbd {
   margin-left: 30px;
   margin-left: 1rem;
   padding-left: 1rem;
-  padding-top: 5px;
+  padding: 4px;
   box-shadow: 2px -2px 172px -62px rgba(212, 212, 212, 0.27);
   -webkit-box-shadow: 2px -2px 172px -62px rgba(229, 227, 227, 0.27);
   -moz-box-shadow: 2px -2px 172px -62px rgba(212, 206, 206, 0.27);
@@ -234,6 +240,66 @@ kbd {
   -webkit-text-fill-color: transparent;
   font-size: 20px;
 }
+
+/* Typing animationbox-all */
+.box-all{
+  display: flex;
+  justify-content: center;
+}
+button{
+  border-radius: 5px;
+  outline: 0;
+  border: 0;
+  padding: 10px;
+  background-color: rgb(110, 110, 135);
+  color: white;
+  transform: translate(5%);
+  animation: fade 2s ease-in-out infinite;  
+  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+}
+
+.box-all a{
+  text-decoration: none;
+  color: #fff;
+}
+
+#demo{
+  color: white;
+}
+
+footer{
+  display: grid;
+  grid-template-columns: auto auto;
+  place-content: center;
+  margin-top: 2rem;
+}
+
+.flex-box a{
+  text-decoration: none;
+}
+
+.flex-box{
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 1rem;
+}
+.middle{
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 1rem;
+}
+.fa-brands{
+  font-size: 1.6rem;
+}
+.signup{
+  margin-top: 3rem;
+}
+
+form{
+  margin-top: 2rem;
+}
+.nav-links
+
 
 /* All icons in the site */
 /* Adding onswitch light */
@@ -280,42 +346,36 @@ kbd {
     width: 60%;
   }
   .rows {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+   display: grid;
+   grid-template-columns: auto auto;
     line-height: 2rem;
-    /* margin: 2rem; */
+    margin: 2rem;
     gap: 1rem;
   }
 
   #rows {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: auto auto;;
     line-height: 2rem;
-    /* margin: 2rem; */
+    margin: 2rem;
     gap: 1rem;
   }
+
 }
 @media screen and (max-width: 768px) {
-  /* body {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  } */
   #rows #col1,
   #col2,
   #col3 {
-    width: 20rem;
+    width: 25rem;
     margin-left: 30px;
     margin-left: 1rem;
-    padding-left: 1rem;
+    padding-left: 2px;
     padding-top: 5px;
     box-shadow: 2px -2px 172px -62px rgba(212, 212, 212, 0.27);
     -webkit-box-shadow: 2px -2px 172px -62px rgba(229, 227, 227, 0.27);
     -moz-box-shadow: 2px -2px 172px -62px rgba(212, 206, 206, 0.27);
     border: 1px solid #ccc;
-    /* letter-spacing: 1px; */
+    letter-spacing: 1px;
     /* line-height: 2rem; */
     border-radius: 1rem;
     font-size: 16px;
@@ -329,13 +389,13 @@ kbd {
   width: 25rem;
   margin-left: 30px;
   margin-left: 1rem;
-  padding-left: 1rem;
+  padding-left: 2px;
   padding: 5px;
   box-shadow: 2px -2px 172px -62px rgba(212, 212, 212, 0.27);
   -webkit-box-shadow: 2px -2px 172px -62px rgba(229, 227, 227, 0.27);
   -moz-box-shadow: 2px -2px 172px -62px rgba(212, 206, 206, 0.27);
   border: 1px solid #ccc;
-  /* letter-spacing: 1px; */
+  letter-spacing: 1px;
   /* line-height: 2rem; */
   border-radius: 1rem;
   font-size: 16px;
@@ -357,7 +417,7 @@ kbd {
     top: 12vh;
     padding-top: 1rem;
     margin: 2rem;
-    background-color: red;
+    background-color: rgb(38, 38, 75);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -367,19 +427,19 @@ kbd {
   }
   .rows {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     line-height: 1rem;
-    /* margin: 2rem; */
+    margin: 2rem;
     gap: 1rem;
   }
 
   #rows {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     line-height: 1rem;
-    /* margin: 2rem; */
+    margin: 2rem;
     gap: 1rem;
   }
 
