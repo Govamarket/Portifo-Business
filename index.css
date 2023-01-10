@@ -296,9 +296,8 @@ footer{
 }
 
 form{
-  margin-left: 3rem;
   background-color: rgb(9, 9, 69);
-  padding: 2rem;
+  padding: 1rem;
   border-top-right-radius: 1rem;
   border-bottom-left-radius: 1rem;
   margin-top: 2rem;
