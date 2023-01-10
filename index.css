@@ -296,7 +296,19 @@ footer{
 }
 
 form{
+  background-color: rgb(9, 9, 69);
+  padding: 2rem;
+  border-top-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
   margin-top: 2rem;
+}
+
+input{
+  border: 0;
+  outline: none;
+  padding: 10px;
+  border-top-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
 }
 .nav-links
 
