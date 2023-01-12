@@ -15,8 +15,6 @@ body {
   background-attachment: fixed;
   background-position: cover;
   background-repeat: no-repeat;
-  animation: fade 1s ease-in 1s;
-  transform: translateY(-1%);
   color: #fff;
 }
 
@@ -110,6 +108,11 @@ nav {
   transform: scale(3);
 }
 
+/* Error messeages form input */
+#error, #pswE{
+  visibility: hidden;
+  color: red;
+}
 
 
 
@@ -133,8 +136,19 @@ p kbd{
   padding-right:  2px;
   text-align: center;
 }
+textarea{
+  /* padding: 5px; */
+  width: 10rem;
+  height: 8rem;
+  border: 0;
+  outline: 0;
+  border-bottom-right-radius: 1rem;
+  /* border-top-left-radius: 1rem; */
+  background-color: #fff;
+}
 
 kbd{
+  font: 10px;
   background: linear-gradient(to right, rgb(67, 124, 205), rgb(69, 214, 202));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -219,10 +233,21 @@ button{
 }
 
 footer{
-  display: grid;
-  grid-template-columns: auto auto;
-  place-content: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
   margin-top: 2rem;
+}
+
+#notify{
+  text-align: center;
+  background: linear-gradient(to right, rgb(67, 124, 205), rgb(69, 214, 202));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 25px;
+  margin-top: 3rem;
+  font-family: "Open Sans", sans-serif;
 }
 
 .flex-box a{
@@ -230,9 +255,7 @@ footer{
 }
 
 .flex-box{
-  display: grid;
-  grid-template-columns: auto auto;
-  gap: 1rem;
+ 
 }
 .middle{
   display: grid;
@@ -242,16 +265,12 @@ footer{
 .fa-brands{
   font-size: 1.6rem;
 }
-.signup{
-  margin-top: 3rem;
-}
 
 form{
   background-color: rgb(9, 9, 69);
-  padding: 1rem;
+  padding: 1.4rem;
   border-top-right-radius: 1rem;
   border-bottom-left-radius: 1rem;
-  margin-top: 2rem;
 }
 
 input{
@@ -261,7 +280,12 @@ input{
   border-top-left-radius: 1.5rem;
   border-bottom-right-radius: 1.5rem;
 }
-.nav-links
+
+#end{
+  color: #fff;
+  font-size: 9px;
+  font-family: 'Courier New', Courier, monospace;
+}
 
 
 /* All icons in the site */
@@ -339,8 +363,14 @@ input{
     font-family: "Open Sans", sans-serif;
   }
 
+  .middle{
+    margin-top: 1.4rem;
+  }
+  .signup{
+    margin-top: 1.4rem;
+  }
 
-  .general-ani{
+   .general-ani{
     display: grid;
     grid-template-columns: auto auto;
     place-content: center;
@@ -355,7 +385,7 @@ input{
     top: 12vh;
     padding-top: 1rem;
     margin: 2rem;
-    background-color: rgb(38, 38, 75);
+    background-color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
