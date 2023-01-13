@@ -251,6 +251,8 @@ footer{
 }
 
 .flex-box a{
+  display: inline-block;
+  gap: 4px;
   text-decoration: none;
 }
 
