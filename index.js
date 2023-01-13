@@ -101,7 +101,7 @@ button.addEventListener("click", (event) => {
     localStorage.setItem("username", JSON.stringify(userName.value));
     localStorage.setItem("password", JSON.stringify(passwordInput.value));
     alert(JSON.stringify(userName.value + ' please access the login page to confirm details'));
-    window.location.href ="http://127.0.0.1:5500/login.html";
+    window.location.href ="login.html";
   }
   validate();
  
