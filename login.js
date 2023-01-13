@@ -21,11 +21,12 @@ const validateAll = () => {
     notMatchMsg.style.visibility = "hidden";
     }
     else if (username.value !== regData) {
-        notMatchMsg.innerHTML = "Password does not match";
+        notMatchMsg.innerHTML = "Username does not match";
         notMatchMsg.style.visibility = "visible";
         errorMessages.style.visibility = "hidden";
     }else if (username.value === regData) {
         errorMessages.style.visibility = "hidden";
+        notMatchMsg.style.visibility = "hidden";
     }
 
     if (passwordInput.value === "") {
