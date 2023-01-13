@@ -50,6 +50,7 @@ buttonType.addEventListener("click",(event) => {
     }else{
         alert("Welcome!");
         location.reload();
+        window.location.href = "https://app.slack.com/client/T04D6SL23P1/C04DMD74KPU";  
     }
     validateAll();
 
