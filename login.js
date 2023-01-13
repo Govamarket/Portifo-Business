@@ -7,7 +7,7 @@ const buttonType = document.querySelector("#btn");
 const errorMessages = document.querySelector("#error");
 const passwordMsg = document.querySelector("#errorP"); 
 const notMatchMsg = document.querySelector("#notmatch");
-const notSame = document.querySelector("#notsame");
+const notSame = document.querySelector("#samenot");
 
 // Declaring localStorage properties "targeting"
 const regData = JSON.parse(localStorage.getItem("username"));
