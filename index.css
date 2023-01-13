@@ -267,10 +267,11 @@ footer{
 }
 
 form{
-  background-color: rgb(9, 9, 69);
+  background-color: rgb(11, 11, 28);
   padding: 1.4rem;
   border-top-right-radius: 1rem;
   border-bottom-left-radius: 1rem;
+  margin: 1rem;
 }
 
 input{
@@ -381,7 +382,7 @@ input{
     position: absolute;
     right: 0px;
     padding: 5rem;
-    height: 22.3rem;
+    height: 37rem;
     top: 12vh;
     padding-top: 1rem;
     margin: 2rem;
@@ -389,7 +390,6 @@ input{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
     transform: translateX(-150%);
     transition: transform 1s ease-in;
   }
@@ -469,4 +469,8 @@ input{
 #number{
   font-weight: 600;
   color: #555;
+}
+
+label a{
+  color: #fff;
 }
